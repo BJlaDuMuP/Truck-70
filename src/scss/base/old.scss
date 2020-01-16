@@ -1,0 +1,176 @@
+
+/* line 13, D:/70/70/style.scss/style.scss */
+
+
+/* line 16, D:/70/70/style.scss/style.scss */
+.wrap .page1 {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* line 21, D:/70/70/style.scss/style.scss */
+.wrap .page1__text {
+    font-family: PT Sans;
+    text-align: left;
+}
+
+/* line 25, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 1080px;
+}
+
+/* line 29, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .header {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+
+/* line 33, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .header__logo {
+    margin-right: 148px;
+}
+
+/* line 36, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .header__logo--size {
+    width: 178px;
+    height: 64px;
+}
+
+/* line 40, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .header__text--size1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+}
+
+/* line 45, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .header__text--size2 {
+    font-size: 16px;
+    color: #0DB472;
+}
+
+/* line 50, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content {
+    display: block;
+    padding-left: 15%;
+    flex-grow: 1;
+}
+
+/* line 54, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content__text--before {
+    position: relative;
+    z-index: 1;
+}
+
+/* line 57, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content__text--before::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    width: 277px;
+    height: 17px;
+    background: #40F2AB;
+    z-index: -1;
+}
+
+/* line 69, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content__text--size1 {
+    font-weight: bold;
+    font-size: 72px;
+    color: #343B34;
+}
+
+/* line 74, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content__text--size2 {
+    font-size: 18px;
+    color: #3D413C;
+}
+
+/* line 78, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .content__text--size3 {
+    font-weight: bold;
+    font-size: 72px;
+    color: #FFC850;
+}
+
+/* line 84, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer {
+    display: block;
+    padding-left: 15%;
+}
+
+/* line 87, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer--color {
+    background: #F1FAFF;
+    width: 975px;
+    height: 345px;
+}
+
+/* line 92, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer__text--size1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #343B34;
+    margin-top: 6%;
+}
+
+/* line 98, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer__text--size2 {
+    font-size: 16px;
+    color: #7C9197;
+}
+
+/* line 102, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer__input--decorashion1 {
+    background: #FFF;
+    border-radius: 4px;
+    border: 0;
+    font-size: 18px;
+    color: #97B2BE;
+    width: 220px;
+    height: 56px;
+}
+
+/* line 111, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer__input--decorashion2 {
+    border-radius: 4px;
+}
+
+/* line 114, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-left .footer__button--decorashion {
+    background: #28CC8B;
+    box-shadow: 0px 4px 8px rgba(40, 204, 139, 0.25);
+    border-radius: 4px;
+    border: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+    width: 220px;
+    height: 56px;
+}
+
+/* line 127, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-right {
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    display: block;
+    background-image: url('../img/1.jpg');
+}
+
+/* line 130, D:/70/70/style.scss/style.scss */
+.wrap .page1 .sidebar-right__img_size {
+    width: 945px;
+    height: 1080px;
+}
+
+/*# sourceMappingURL=style.css.map */

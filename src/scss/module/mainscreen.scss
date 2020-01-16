@@ -1,0 +1,212 @@
+.mainscreen {
+    &-left {
+        width: 813px;
+
+        @include mediaMD {
+            width: 500px;
+        }
+
+        @include mediaSM {
+            width: 100%;
+        }
+
+        @include mediaXS {
+            width: 100%;
+        }
+    }
+
+    &-header {
+        display: flex;
+        padding-top: 72px;
+        margin-bottom: 144px;
+    }
+
+    &-logo {
+        width: 178px;
+        height: 64px;
+        background-image: url('../img/logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 148px;
+    }
+
+    &-contacts {
+        &__phone {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 12px;
+            color: #000000;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__call {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #0DB472;
+        }
+    }
+
+    &-title {
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 84px;
+        color: #343B34;
+         margin-bottom: 56px;
+
+        @include mediaSM {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        @include mediaXS {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        i {
+            font-weight: bold;
+            color: #FFC850;
+        }
+
+        span {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 10px;
+                height: 17px;
+                background: #40F2AB;
+                z-index: -1;
+            }
+        }
+    }
+
+    &-image {
+        width: calc(100% - 975px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../img/1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mediaSM {
+            display: none;
+        }
+
+        @include mediaXS {
+            display: none;
+        }
+    }
+
+    &-description  {
+        font-size: 18px;
+        line-height: 27px;
+        color: #3D413C;
+        margin-bottom: 151px;
+    }
+
+    &-form {
+        margin-left: -162px;
+        height: 345px;
+    }
+
+    &-scroll {
+        width: 124px;
+        height: 124px;
+        background: #FFDC64;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url('../img/Scrollbar.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.form {
+    background: #F1FAFF;
+
+    &__row {
+        margin-left: 162px;   
+    }
+
+    &-description {
+        font-weight: bold;
+        font-size: 32px;
+        color: #343B34;
+        margin-bottom: 40px;
+    }
+
+    &-control {
+
+        &__input {
+            background: #FFF;
+            border-radius: 4px;
+            border: 0;
+            font-size: 18px;
+            color: #97B2BE;
+            opacity:1;
+            width: 220px;
+            height: 56px;
+            margin-right: 16px;
+            margin-bottom: 24px;
+        }
+
+        &__button {
+            background: #28CC8B;
+            box-shadow: 0px 4px 8px rgba(40, 204, 139, 0.25);
+            border-radius: 4px;
+            border: 0;
+            font-weight: bold;
+            font-size: 18px;
+            color: #FFF;
+            width: 220px;
+            height: 56px;
+        }
+
+        &-checkbox {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: -12px;
+
+            &__input:checked + &__icon { background-image: url('../img/Vector.png');
+                                         background-position: center;
+                                         background-repeat: no-repeat;}
+
+            &__input {
+                opacity:0;
+            }
+
+            &__icon {
+                background-color: #28CC8B;
+                width: 20px; 
+                height: 20px;
+                border-radius: 4px;
+                margin-right: 12px;
+            }
+
+            &__label {
+                font-size: 16px;
+                color: #7C9197;
+            }
+        }
+
+    }
+}
